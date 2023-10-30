@@ -1,0 +1,85 @@
+.nav-underline {
+    position: relative;
+    text-decoration: none;
+}
+  
+.nav-underline::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px; 
+    border-radius: 10px;
+    background-color: #FAC679;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 100%;
+    transition: transform 0.5s;
+}
+  
+.nav-underline:hover::before {
+    transform: scaleX(1);
+}
+
+.navbar{
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.navbar-scrolled{
+    background-color: #19181397;
+}
+
+.child{
+    transition:all 1.1s ;
+    -webkit-transition:all 1.1s ;
+    -moz-transition:all 1.1s ;
+    -ms-transition:all 1.1s ;
+    -o-transition:all 1.1s ;
+}
+
+.child:hover {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+.disable-imgae-normal{
+    display: none;
+}
+
+
+@media screen and (max-width:700px){
+    .custom-font{
+        font-size: 25px;
+    }  
+    
+    .custom-padding{
+        padding: 10px;
+    }
+
+    .custom-image{
+        width: 100px;
+    }
+
+    .flex-column-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .col-md-5, .col {
+        width: 100%; /* Mengisi seluruh lebar pada tampilan seluler */
+    }
+
+    .disable-img{
+        display: none;
+    }
+
+    .disable-imgae-normal{
+        display: block;
+    }
+}
